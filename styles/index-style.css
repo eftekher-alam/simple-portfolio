@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px 0px 150px;
+}
+
+nav>h2 {
+    color: #181818;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+nav li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #474747;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary {
+    border: none;
+    border-radius: 5px;
+    background: #FD6E0A;
+    color: var(--white-color, #FFF);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+header {
+    background: #FFF8F3;
+    background-image: url("../images/header_bg.png"), url("../images/developer.png");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+    background-size: 45rem, 5.1rem;
+    height: 100vh;
+}
+
+.banner {
+    padding: 20px 20px 0px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner>img {
+    height: 33.7rem;
+    padding-right: 50px;
+}
+
+.second-title {
+    color: #474747;
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.first-title {
+    color: #181818;
+    font-family: Open Sans;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.desc {
+    color: #757575;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-desc-container>button {
+    margin-top: 10px;
+}
+
+
+/* style of about */
+.about-container {
+    max-width: 900px;
+    background-color: #FFF8F3;
+    margin: 150px auto;
+    padding: 5rem;
+    text-align: center;
+}
+
+
+
+.about-info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.title {
+    color: #181818;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about-desc {
+    color: #757575;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.about-card-title {
+    color: #757575;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-card-desc {
+    color: #474747;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* style of What I do */
+.what-contianer {
+    max-width: 1060px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.what-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.what-card {
+    text-align: left;
+    padding: 20px;
+    box-shadow: .5px .5px 10px gainsboro;
+}
+
+.what-card h2,
+img {
+    color: #181818;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Summary of my Resume */
+.resume-container {
+    max-width: 1060px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.resume-info-contianer {
+    display: flex;
+    gap: 50px;
+}
+
+.resume-left,
+.resume-right {
+    margin-top: 25px;
+    text-align: start;
+}
+
+.info-title {
+    color: var(--dark-02, #474747);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-institute {
+    color: var(--dark-03, #757575);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.info,
+resume-container>button {
+    padding: 20px 0px;
+}
+
+/* style of footer */
+
+footer {
+    background-color: #FFF8F3;
+    padding: 100px 150px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.footer-right>input,
+textarea {
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer-right>input:focus,
+textarea:focus {
+    outline: none;
+    border: .5px solid #FD6E0A;
+}
+
+.footer-right>button {
+    margin-top: 10px;
+}
