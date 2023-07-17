@@ -52,7 +52,7 @@ header {
     background-image: url("../images/header_bg.png"), url("../images/developer.png");
     background-repeat: no-repeat;
     background-position: bottom right, top left;
-    background-size: 45rem, 5.1rem;
+    background-size: 45rem, 5rem;
     height: 100vh;
 }
 
@@ -64,7 +64,7 @@ header {
 }
 
 .banner>img {
-    height: 33.7rem;
+    width: 467px;
     padding-right: 50px;
 }
 
@@ -211,16 +211,12 @@ resume-container>button {
 }
 
 /* style of footer */
-
-footer {
-    background-color: #FFF8F3;
-    padding: 100px 150px;
-}
-
 .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+    background-color: #FFF8F3;
+    padding: 100px 150px;
 }
 
 .footer-right>input,
@@ -240,4 +236,89 @@ textarea:focus {
 
 .footer-right>button {
     margin-top: 10px;
+}
+
+
+.hide {
+    display: none;
+}
+
+/* Design for mobile device */
+
+@media screen and (max-width:600px) {
+
+    /* mobile design for what I do */
+    .what-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .what-contianer>p {
+        padding: 10px 30px;
+    }
+
+    /* mobile design for Resume */
+    .resume-info-contianer {
+        flex-direction: column;
+    }
+
+    .resume-left,
+    .resume-right {
+        padding: 0px 20px;
+    }
+
+    /* mobile design for footer */
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 20px;
+    }
+
+    .footer-right>input,
+    textarea {
+        width: 95%;
+    }
+
+    /* mobile design for about section */
+    .about-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-container {
+        padding: 4rem 1rem;
+    }
+
+    /* mobile design for header and banner */
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header {
+        background-image: none;
+    }
+
+    .banner {
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+
+    .banner>img {
+        width: 87.5%;
+        height: 40%;
+    }
 }
